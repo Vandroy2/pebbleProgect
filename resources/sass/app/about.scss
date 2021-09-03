@@ -1,0 +1,77 @@
+.about-page {
+    .banner-top {
+        height: 100%;
+        width: 100%;
+        background:  url(/img/about-mob.png) no-repeat;
+        background-size: cover;
+    }
+    .wrap {
+        padding: 50px;
+          p {
+            text-align: center;
+            letter-spacing: 1.44px;
+            color: #AF9275;
+            font-size: 18px;
+            font-family: 'APOLLO';
+            line-height: 28px;
+        }
+    }
+  
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        .value {
+            color:#AF9275;
+        }
+    }
+    .line-vertical {
+        display: block;
+        width: 2px;
+        height: 50px;
+        background-color:#AF9275;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    
+    @media (min-width: 981px) { 
+        .banner-top {
+            background:  url(/img/about-web.png) no-repeat;
+            p {
+            width: 90%;
+            }
+            .scroll-bottom {
+            bottom: 100px;
+                .line {
+                    height: 120px;
+                    margin-bottom: -58px;
+                }
+            }
+            .title {
+                margin-top: 0;
+            }
+        }
+        .wrap {
+            padding: 100px;
+        }
+        .wrap p {
+            line-height: 60px;
+            font-size: 36px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            .value {
+                color:#AF9275;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        .line-vertical {
+            height: 100px;
+        }
+        
+    }
+}

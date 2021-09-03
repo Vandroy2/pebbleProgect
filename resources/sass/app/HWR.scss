@@ -1,0 +1,85 @@
+.HWR-page {
+    .banner-top {
+        height: 100%;
+        width: 100%;
+        background:  url(/img/HWRmob.png) no-repeat;
+        background-size: cover;
+    }
+    .info {
+        padding: 50px 0;
+    }
+    .info .wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        padding: 25px;
+        text-align: center;
+        p {
+            color: #707070;
+            letter-spacing: 0.84px;
+            font-size: 16px;
+            margin-top: 5px;
+            line-height: 22px;
+        }
+    }
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        .value {
+            color:#AF9275;
+        }
+    }
+    @media (min-width: 981px) {
+        .banner-top {
+            background:  url(/img/HWR.png) no-repeat;
+            p {
+            width: 90%;
+            }
+        }
+        .info {
+            padding: 100px 0;
+        }
+        .info .wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .card:not(:nth-of-type(2n))  {
+         padding-right: 50px;
+         border-right: 1px solid #AF9275;
+        }
+        .card:nth-of-type(2n) {
+            padding-left: 50px;
+            border-left: 1px solid #AF9275;
+        }
+        .card {
+            width: 50%;
+            padding: 50px 0;
+            p {
+            font-size: 28px;
+            margin-top: 20px;
+            line-height: 50px;
+            }
+        }
+        .line-vertical {
+            display: block;
+            width: 2px;
+            height: 100px;
+            background-color:#AF9275;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            .value {
+                color:#AF9275;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        
+    }   
+}

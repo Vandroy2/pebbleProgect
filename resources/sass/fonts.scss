@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'DTLNobelT';
+  src: url('../fonts/DTLNobelT.eot');
+  src: url('../fonts/DTLNobelT.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/DTLNobelT.woff2') format('woff2'),
+      url('../fonts/DTLNobelT.woff') format('woff'),
+      url('../fonts/DTLNobelT.ttf') format('truetype'),
+      url('../fonts/DTLNobelT.svg#DTLNobelT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nobel';
+  src: url('../fonts/Nobel-Light.eot');
+  src: url('../fonts/Nobel-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Nobel-Light.woff2') format('woff2'),
+      url('../fonts/Nobel-Light.woff') format('woff'),
+      url('../fonts/Nobel-Light.ttf') format('truetype'),
+      url('../fonts/Nobel-Light.svg#Nobel-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'APOLLO';
+  src: url('../fonts/APOLLO-Italic.eot');
+  src: url('../fonts/APOLLO-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/APOLLO-Italic.woff2') format('woff2'),
+      url('../fonts/APOLLO-Italic.woff') format('woff'),
+      url('../fonts/APOLLO-Italic.ttf') format('truetype'),
+      url('../fonts/APOLLO-Italic.svg#APOLLO-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'APOLLO';
+  src: url('../fonts/APOLLO-Regular.eot');
+  src: url('../fonts/APOLLO-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/APOLLO-Regular.woff2') format('woff2'),
+      url('../fonts/APOLLO-Regular.woff') format('woff'),
+      url('../fonts/APOLLO-Regular.ttf') format('truetype'),
+      url('../fonts/APOLLO-Regular.svg#APOLLO-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/fonts/icomoon.eot?fm3r1n');
+  src:  url('../fonts/icomoon/fonts/icomoon.eot?fm3r1n#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/fonts/icomoon.ttf?fm3r1n') format('truetype'),
+    url('../fonts/icomoon/fonts/icomoon.woff?fm3r1n') format('woff'),
+    url('../fonts/icomoon/fonts/icomoon.svg?fm3r1n#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+  content: "\e900";
+}
+.icon-next:before {
+  content: "\e901";
+}
+.icon-smartphone-call:before {
+  content: "\e902";
+}
+.icon-down-arrow:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-success:before {
+  content: "\e905";
+}
+.icon-user:before {
+  content: "\e906";
+}
+
+
+

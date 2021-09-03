@@ -1,0 +1,225 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: 50;
+  .content {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+  }
+  .right-part {
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .icon-instagram {
+    margin-right: 50px;
+    color: #fff;
+    font-size: 14px;
+  }
+  .logo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 55;
+  }
+  .drop-menu {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 50;
+    background-color: #272424;
+    
+  }
+  .drop-menu.open-menu {
+    display: block;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+
+    .wrap {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .menu {
+      font-family: 'APOLLO';
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .item-menu {
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 20px 0;
+      display: block;
+    }
+    .wrap.element-animation.right {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    .wrap.element-animation.element-show {
+      opacity: 1;
+      transition: all 1s;
+      transform: translateX(0px);
+    } 
+  }
+  .nav__btn {
+    z-index: 55;
+    .menu {
+      display: none;
+    }
+    .line-1,
+    .line-2 {
+      display: block;
+      margin-bottom: 5px;
+      height: 2px;
+      width: 16px;
+      background-color: #fff;
+    }
+    .line-3 {
+      display: block;
+      height: 2px;
+      width: 10px;
+      background-color: #fff;
+    }
+  }
+  .nav__btn.active {
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    .line-2 {
+      opacity: 0;
+    }
+    .line-1 {
+      transform: rotate(45deg);
+      width: 20px;
+      position: absolute;
+      top: 50%;
+    }
+    .line-3 {
+      transform: rotate(-45deg);
+      width: 20px;
+      position: absolute;
+      top: 50%;
+    }
+  }
+  @media (min-width: 567px) {
+    .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .right-part {
+      width: fit-content;
+      right: 0;
+      padding: 0;
+    }
+    .logo {
+      margin-left: 0;
+      transform: translateX(0);
+      img {
+        width: 150px;
+      }
+    }
+    .nav__btn {
+      .line-1,
+      .line-2 {
+        height: 2px;
+        width: 20px;
+      }
+      .line-3 {
+        width: 15px;
+      }
+    }
+  }
+  
+  @media (min-width: 981px) { 
+    .icon-instagram {
+      color: #AF9275;
+      font-size: 20px;
+    }
+    .content {
+      padding-top: 50px;
+    }
+    .nav__btn {
+      width: fit-content;
+      cursor: pointer;
+      .menu {
+        display: block;
+        text-transform: uppercase;
+        color: #AF9275;
+        font-size: 28px;
+        font-family: 'APOLLO';
+      }
+      .line-1,
+      .line-2,
+      .line-3 {
+        display: none;
+      }
+    }
+    .nav__btn.active {
+      .menu {
+        display: none;
+      }
+      transform: rotate(180deg);
+      transition: transform 1s;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      .line-2 {
+        opacity: 0;
+      }
+      .line-1 {
+        display: block;
+        transform: rotate(45deg);
+        transition: transform 1s;
+        width: 20px;
+        position: absolute;
+        top: 50%;
+      }
+      .line-3 {
+        display: block;
+        transform: rotate(-45deg);
+        transition: transform 1s;
+        width: 20px;
+        position: absolute;
+        top: 50%;
+      }
+    }
+    .logo {
+      margin-left: 0;
+      transform: translateX(0);
+      img {
+        width: 200px;
+      }
+    }
+    .drop-menu.open-menu {
+      .wrap {
+        margin-left: auto;
+        margin-right: 0;
+      }
+      .item-menu {
+        color: #fff;
+        font-size: 3rem;
+        text-align: end;
+        transition: transform 0.5s ease-out;
+        &:hover {
+              transition: transform 0.5s ease-out;
+              transform: translateX(-20px);
+              color: #AF9275;
+        }
+      }
+    }
+
+  } 
+}
